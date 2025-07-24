@@ -11,7 +11,8 @@
 /* sherd-item */
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
 }
 .display-flex {
   display: flex;
@@ -26,13 +27,12 @@
   color: #060202;
 }
 .btn {
-  width: 270px;
+  width: 100%;
   height: 50px;
   background-color: #e95a08;
   font-size: 1rem;
   color: white;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 /* nav-item */
@@ -71,7 +71,7 @@
 }
 
 /* our-section */
-.title-item {
+.our-item {
   margin-top: 142px;
   text-align: center;
   margin-top: 180px;
@@ -93,14 +93,20 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   justify-content: center;
   justify-items: center;
+  align-items: center;
   gap: 10px;
 }
 .product-card {
   width: 100%;
+  text-align: center;
 }
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
 /* Mobile-media-quare */
 
 @media screen and (max-width: 576px) {
@@ -110,18 +116,17 @@
   .always-item {
     margin-top: 0;
   }
-  .title-item {
-    margin-top: 0;
-  }
   .item-title {
     font-size: 2rem;
+  }
+  .our-item {
+    margin-top: 0;
   }
   .our-title {
     font-size: 2rem;
   }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    width: 50%;
-    margin: auto;
+    width: 100%;
   }
 }
