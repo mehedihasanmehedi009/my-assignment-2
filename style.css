@@ -96,7 +96,7 @@
   justify-content: center;
   justify-items: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   border-color: #e95a08;
 }
 .product-card {
@@ -109,8 +109,7 @@
   width: 100%;
   height: auto;
 }
-
-/* Flower & Plants Lover */
+/* Flower & Plants Lover-section */
 .Plants {
   margin-top: 150px;
 }
@@ -131,7 +130,13 @@
 .Plants-section li {
   gap: 20px;
 }
-
+.icon-img img {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  margin-left: 360px;
+  margin-top: -110px;
+}
 /* Latest-section */
 .Latest-section {
   margin-top: 120px;
@@ -146,8 +151,7 @@
 /* Mobile-media-quare */
 
 @media screen and (max-width: 576px) {
-  .section-always,
-  .Plants {
+  .section-always {
     flex-direction: column-reverse;
   }
   .always-item {
@@ -165,9 +169,25 @@
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    margin-bottom: 40px;
+  }
+  .nav-item:nth-child(1),
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3) {
+    display: none;
+  }
+  .nav-link {
+    display: block;
+  }
+
+  .icon-img img {
+    display: none;
   }
   .Plants {
     flex-direction: column;
+    margin-top: 0;
+  }
+  .Plants {
   }
   .Plants-title {
     font-size: 1.2rem;
@@ -175,8 +195,14 @@
   .Plants img {
     width: 100%;
   }
-
+  .Latest-section {
+    margin-top: 10;
+  }
   .Latest-section h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .img-item {
+    flex-direction: column;
   }
 }
