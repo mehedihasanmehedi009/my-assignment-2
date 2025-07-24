@@ -18,7 +18,7 @@
   display: flex;
 }
 .text-gray {
-  color: #968888;
+  color: #867979;
 }
 .text-heding {
   color: #e95a08;
@@ -131,6 +131,18 @@
 .Plants-section li {
   gap: 20px;
 }
+
+/* Latest-section */
+.Latest-section {
+  margin-top: 120px;
+  text-align: center;
+}
+.Latest-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 /* Mobile-media-quare */
 
 @media screen and (max-width: 576px) {
@@ -162,5 +174,9 @@
   }
   .Plants img {
     width: 100%;
+  }
+
+  .Latest-section h1 {
+    font-size: 1.3rem;
   }
 }
