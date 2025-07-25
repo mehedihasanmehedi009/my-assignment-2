@@ -343,6 +343,8 @@ ul li {
   }
   .pic1 {
     width: 100%;
-    margin-left: -9px;
+    height: 210px;
+  }
+  .left-column {
   }
 }
