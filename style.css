@@ -44,6 +44,10 @@
   border: none;
   cursor: pointer;
 }
+.btns :hover {
+  background-color: cyan;
+}
+
 /* nav-item */
 .navbar {
   justify-content: space-between;
@@ -256,7 +260,7 @@
 
 /* section-Join  */
 .section-Join {
-  width: 100%;
+  max-width: 1140px;
   height: 333px;
   margin: auto;
   text-align: center;
